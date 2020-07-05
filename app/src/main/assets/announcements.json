@@ -1,0 +1,22 @@
+{
+  "data": [
+    {
+      "date": "05.07.2020",
+      "course": "CEN231 Prog. Languages",
+      "topic": "Yariyil Sinavi",
+      "message": "message1"
+    },
+    {
+      "date": "01.07.2020",
+      "course": "CEN231 Disc. Mathematics",
+      "topic": "Odev Teslim Tarihi",
+      "message": "message2"
+    },
+    {
+      "date": "23.06.2020",
+      "course": "CEN231 Alg. and Prog.",
+      "topic": "Final Sinavi Hakkinda",
+      "message": "message3"
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ABDCAD</color>
+    <color name="colorPrimaryDark">#DDD2F1</color>
+    <color name="colorAccent">#03DAC5</color>
+</resources>
