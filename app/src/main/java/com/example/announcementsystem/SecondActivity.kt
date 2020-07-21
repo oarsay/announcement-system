@@ -8,6 +8,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.BaseAdapter
+import android.widget.ImageView
+import android.widget.Toast
 import com.example.deneme.ListAnnModel
 import com.google.gson.Gson
 import kotlinx.android.synthetic.main.activity_second.*
@@ -25,32 +27,72 @@ class SecondActivity : AppCompatActivity() {
         setContentView(R.layout.activity_second)
         //supportActionBar?.hide()
 
-        val jsonString = loadJson(this)
+        var bundle: Bundle? = intent.extras
+        val bellB = findViewById<ImageView>(R.id.bellButtonIV)
+        val USER_ID: Int? = bundle?.getInt("USER_ID")
+        val AUTHORITY: Boolean? = bundle?.getBoolean("AUTHORITY")
+
+        bellB.setOnClickListener{
+            //Toast.makeText(applicationContext, "CLICKED", Toast.LENGTH_LONG).show()
+            val intent = Intent(this, AddingActivity::class.java)
+            intent.putExtra("USER_ID", USER_ID)
+            intent.putExtra("AUTHORITY", AUTHORITY)
+            startActivity(intent)
+        }
+
+        var jsonString = loadJson("announcements.json", this)
 
         var anns = Gson().fromJson<ListAnnModel>(jsonString, ListAnnModel::class.java)
 
         for(annJson in anns.data) {
-            announcementsList.add(
-                Announcements(
-                    annJson.date,
-                    annJson.course,
-                    annJson.topic,
-                    annJson.message
-                )
-            )
+
+            var jsonString = loadJson("courses.json", this)
+            var courses = Gson().fromJson<ListCourseModel>(jsonString, ListCourseModel::class.java)
+
+            if(AUTHORITY!!){
+                for(courseJson in courses.data){
+                    if(courseJson.name == annJson.course && courseJson.lecturerID!!.contains(USER_ID!!)){
+
+                        announcementsList.add(
+                            Announcements(
+                                annJson.date,
+                                annJson.course,
+                                annJson.topic,
+                                annJson.message
+                            )
+                        )
+                    }
+                }
+            }
+            else{
+                for(courseJson in courses.data){
+                    if(courseJson.name == annJson.course && courseJson.studentID!!.contains(USER_ID!!)){
+
+                        announcementsList.add(
+                            Announcements(
+                                annJson.date,
+                                annJson.course,
+                                annJson.topic,
+                                annJson.message
+                            )
+                        )
+                    }
+                }
+            }
+
         }
 
         adapter = AnnListAdapter(this, announcementsList)
         announcmentsLV.adapter = adapter
     }
 
-    private fun loadJson(context: Context): String? {
+    private fun loadJson(fileName:String, context: Context): String? {
         var input: InputStream? = null
         var jsonString: String
 
         try {
             //Create InputStream
-            input = context.assets.open("announcements.json")
+            input = context.assets.open(fileName)
             val size = input.available()
 
             //Create a buffer with the size
@@ -113,8 +155,6 @@ class SecondActivity : AppCompatActivity() {
             return announcementsList.size
         }
 
-
     }
-
 
 }

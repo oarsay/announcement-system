@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/green"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/panel_top"
+        android:gravity="center_vertical"
+        android:paddingLeft="15dp"
+        android:text="Ders Listesi"
+        android:textColor="@color/green"
+        android:textSize="20sp" />
+
+    <Spinner
+        android:id="@+id/addCourseSP"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/panel_bottom"
+        android:dropDownWidth="match_parent"
+        android:popupBackground="@drawable/panel_bottom" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/panel_top"
+        android:gravity="center_vertical"
+        android:paddingLeft="15dp"
+        android:text="Konu Başlığı"
+        android:textColor="@color/green"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/addTopicET"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/panel_bottom2"
+        android:ems="10"
+        android:hint="Konu başlığını girin"
+        android:inputType="textPersonName"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:textColor="@color/green"
+        android:textColorHint="@color/lightGreen"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/panel_top"
+        android:gravity="center_vertical"
+        android:paddingLeft="15dp"
+        android:text="Mesaj"
+        android:textColor="@color/green"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/addMessageET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/panel_bottom3"
+        android:ems="10"
+        android:gravity="top|left"
+        android:hint="Mesajınızı girin"
+        android:inputType="textMultiLine|textPersonName"
+        android:lines="16"
+        android:paddingLeft="15dp"
+        android:paddingTop="15dp"
+        android:paddingRight="15dp"
+        android:paddingBottom="20dp"
+        android:textColor="@color/green"
+        android:textColorHint="@color/lightGreen"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/addB"
+        android:layout_width="76dp"
+        android:layout_height="26dp"
+        android:layout_gravity="right"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/rounded"
+        android:text="Gönder"
+        android:textAllCaps="false"
+        android:textSize="18sp" />
+
+</LinearLayout>

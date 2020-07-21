@@ -2,13 +2,13 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#00692D"
+    android:background="@color/green"
     android:orientation="vertical"
     android:padding="5dp">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="40dp"
+        android:layout_height="50dp"
         android:layout_weight="0"
         android:background="@drawable/ann_background"
         android:orientation="horizontal"
@@ -22,6 +22,7 @@
             android:gravity="center_vertical"
             android:maxLines="2"
             android:text="Tarih:"
+            android:textColor="@color/green"
             android:textSize="14sp" />
 
         <TextView
@@ -32,6 +33,7 @@
             android:gravity="center_vertical"
             android:maxLines="2"
             android:text="Ders:"
+            android:textColor="@color/green"
             android:textSize="14sp" />
 
         <TextView
@@ -42,6 +44,7 @@
             android:gravity="center_vertical"
             android:maxLines="3"
             android:text="Konu:"
+            android:textColor="@color/green"
             android:textSize="14sp" />
 
     </LinearLayout>

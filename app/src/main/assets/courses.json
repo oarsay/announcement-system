@@ -1,0 +1,19 @@
+{
+  "data": [
+    {
+      "name": "CEN231 Prog. Languages",
+      "lecturerID": [111],
+      "studentID": [444,555]
+    },
+    {
+      "name": "CEN231 Disc. Mathematics",
+      "lecturerID": [222],
+      "studentID": [666]
+    },
+    {
+      "name": "CEN231 Alg. and Prog.",
+      "lecturerID": [111, 333],
+      "studentID": [555, 666]
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "data": [
+    {
+      "name": "Prof. Dr. Işıl Tekin",
+      "id": 111,
+      "password": 111
+    },
+    {
+      "name": "Doç. Dr. Arda Giray",
+      "id": 222,
+      "password": 222
+    },
+    {
+      "name": "Dr. Öğr. Üyesi Serpil Akdağ",
+      "id": 333,
+      "password": 333
+    }
+  ]
+}

@@ -18,11 +18,11 @@
             android:layout_width="297dp"
             android:layout_height="60dp"
             android:layout_weight="1"
-            android:background="#00692D"
+            android:background="@color/green"
             android:gravity="center_vertical"
             android:paddingLeft="10dp"
             android:text="Duyurularım"
-            android:textColor="#FFFFFF"
+            android:textColor="@color/white"
             android:textSize="30sp"
             app:fontFamily="serif" />
 
@@ -31,7 +31,7 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="#00692D"
+            android:background="@color/green"
             android:padding="10dp"
             app:srcCompat="@android:drawable/ic_popup_reminder" />
 
@@ -47,11 +47,11 @@
             android:layout_width="wrap_content"
             android:layout_height="60dp"
             android:layout_weight="1"
-            android:background="#CB00692D"
+            android:background="@color/lightGreen"
             android:gravity="center_vertical"
             android:paddingLeft="10dp"
             android:text="Tarih"
-            android:textColor="#FFFFFF"
+            android:textColor="@color/white"
             android:textSize="24sp"
             app:fontFamily="serif" />
 
@@ -60,11 +60,11 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="#CB00692D"
+            android:background="@color/lightGreen"
             android:gravity="center_vertical"
             android:paddingLeft="10dp"
             android:text="Ders"
-            android:textColor="#FFFFFF"
+            android:textColor="@color/white"
             android:textSize="24sp"
             app:fontFamily="serif" />
 
@@ -73,11 +73,11 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="#CB00692D"
+            android:background="@color/lightGreen"
             android:gravity="center_vertical"
             android:paddingLeft="10dp"
             android:text="Konu"
-            android:textColor="#FFFFFF"
+            android:textColor="@color/white"
             android:textSize="24sp"
             app:fontFamily="serif" />
     </LinearLayout>
@@ -86,7 +86,7 @@
         android:id="@+id/announcmentsLV"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#00692D"
+        android:background="@color/green"
         android:paddingTop="20dp" />
 
 </LinearLayout>
