@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ABDCAD</color>
+    <color name="lightPurple">#DDD2F1</color>
+    <color name="purple">#C8B9E6</color>
+    <color name="green">#00692D</color>
+    <color name="lightGreen">#BF078E40</color>
+    <color name="white">#FFFFFF</color>
+</resources>
